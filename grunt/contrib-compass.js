@@ -5,7 +5,15 @@ module.exports = function(grunt){
         sassDir: './src',
         cssDir: './src/css'
       }//Options
-    }//Dev
+    },//Dev
+
+    siteBuild: {
+      options: {
+        sassDir: './src',
+        cssDir: './site-building/styles',
+        outputStyle: 'compressed'
+      }
+    }//Site Build
   })//Config
   grunt.loadNpmTasks('grunt-contrib-compass');
 }//Exports
