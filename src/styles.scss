@@ -1,4 +1,12 @@
-html,
-body {background: green;}
-.wrapper {background: black;}
-
+.btn.primary {
+	background: steelblue;
+	color: snow;
+	border: 2px solid steelblue;
+	display: block;
+	height: 300px;
+	width: 400px;
+}
+/*
+<button class="btn primary">Primary</button>
+``<button class="btn primary">Primary</button>``
+*/

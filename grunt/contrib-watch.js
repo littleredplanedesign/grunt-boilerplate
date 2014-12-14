@@ -13,4 +13,5 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default',['dev-server','watch']);
+  grunt.registerTask('style-guide-server', ['connect:styleGuideServer']);
 };//Exports
