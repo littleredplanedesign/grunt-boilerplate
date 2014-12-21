@@ -2,14 +2,15 @@ module.exports = function(grunt){
   grunt.config('compass', {
     dev: {
       options: {
-        sassDir: './src',
-        cssDir: './src/css'
+        sassDir: './src/sass',
+        cssDir: './src/css',
+        noLineComments: true
       }//Options
     },//Dev
 
     siteBuild: {
       options: {
-        sassDir: './src',
+        sassDir: './src/sass',
         cssDir: './site-building/styles',
         outputStyle: 'compressed'
       }

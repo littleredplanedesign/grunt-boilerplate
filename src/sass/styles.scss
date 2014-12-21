@@ -1,0 +1,43 @@
+/*doc
+---
+title: Buttons
+name: buttons
+category: Base CSS
+---
+
+Button styles. blah blah blah.
+
+```html_example
+<button class="btn-primary">Primary</button>
+```
+*/
+.btn-primary {
+	background: steelblue;
+	color: snow;
+	border: 2px solid steelblue;
+	display: block;
+	height: 300px;
+	width: 400px;
+}
+/*doc
+---
+title: Headings
+name: headings
+category: Base CSS
+---
+
+Heading styles. blah blah blah.
+
+```html_example
+<h1>Heading 1</h1>
+```
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: arial, sans-serif;
+	font-style: italic;
+}
