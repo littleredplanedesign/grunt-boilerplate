@@ -2,27 +2,37 @@ module.exports = function(grunt) {
    grunt.config('pleeease', {
      //Again, paths may need further configuration.
      //These tasks are working.
+     //There are more options to explore as well on this module.
      expandedStyles: {
       options: {
         autoprefixer: {'browsers': ['last 4 versions', 'ios 6']},
         minifier: false
       },
       files: {
-        './src/css/styles.expanded.css' : './src/css/styles.css'
+        './src/css/styles.post.expanded.css' : './src/css/styles.css'
       }
-    },
-
+     },//Expanded Styles for Analysis
+     buildWithStyles: {
+       options: {
+         autoprefixer: {'browsers': ['last 4 versions', 'ios 6']},
+         minifier: false
+       },
+       files: {
+         './site-building/css/styles.post.expanded.css' : './src/css/styles.css'
+       }//Files
+     },//Build With Styles for Site Building
      compressedStyles: {
         options: {
           autoprefixer: {'browsers': ['last 4 versions', 'ios 6']},
-          minifier: false
+          minifier: true
         },
         files: {
-          './site-distribution/css/styles.fixed.min.css' : './site-building/css/styles.min.css'
-        }
-      }
+          './site-building/css/styles.post.min.css' : './site-building/css/styles.post.expanded.css'
+        }//Files
+      }//Compressed Styles for site distribution
    });
   grunt.loadNpmTasks('grunt-pleeease');
-  grunt.registerTask('expand-browser-styles','pleeease:expandedStyles');
-  grunt.registerTask('minify-browser-styles','pleeease:compressedStyles');
+  grunt.registerTask('observe-fixed-styles','pleeease:expandedStyles');
+  grunt.registerTask('use-fixed-styles', 'pleeease:buildWithStyles');
+  grunt.registerTask('minify-fixed-styles','pleeease:compressedStyles');
 }

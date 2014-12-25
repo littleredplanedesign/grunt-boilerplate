@@ -15,6 +15,7 @@
     "grunt-hologram": "0.0.4",
     "grunt-contrib-cssmin": "~0.10.0",
     "grunt-contrib-htmlmin": "~0.3.0",
-    "grunt-pleeease": "~1.2.0"
+    "grunt-pleeease": "~1.2.0",
+    "grunt-uncss": "~0.3.8"
   }
 }

@@ -7,5 +7,5 @@ module.exports = function(grunt){
     }//Generate
   }); //Hologram
   grunt.loadNpmTasks('grunt-hologram');
-  grunt.registerTask('build-hologram','hologram:generate');
+  grunt.registerTask('build-hologram-styleguide','hologram:generate');
 }

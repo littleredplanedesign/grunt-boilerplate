@@ -55,3 +55,17 @@ body {
 	background: coral;
 }
 
+a:link {
+	color: green;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: green;
+}
+
+.notUsed {
+	background: fuchsia;
+}

@@ -1,5 +1,6 @@
 module.exports = function(grunt){
   grunt.config('shell', {
+    //These are for reference, for now.
     setupStyleguide: {
       command: [
         'cd src',
