@@ -9,9 +9,9 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: '.',
-        src: './site-building/*.html',
-        dest: './site-distribution/'
+        cwd: './src/html',
+        src: '**/*.html',
+        dest: './site-distribution'
       }]
     }
   });

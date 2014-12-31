@@ -7,11 +7,15 @@ module.exports = function(grunt){
     //If anything, it would be needed in the site building folder, if we were to consider the framework
     //a library module in the site building folder.
     combine: {
-      files: {
-        './site-building/css/styles.post.min.css': ['./site-building/css/styles.post.expanded.css']
-      }
+      files: [{
+        expand: true,
+        cwd: './site-building/',
+        flatten: true,
+        src: '**/*.css',
+        dest: './site-distribution/css/'
+      }]
     }
   });
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  //grunt.registerTask('minify-styles','cssmin:combine');
+  grunt.registerTask('minify-styles','cssmin:combine');
 }

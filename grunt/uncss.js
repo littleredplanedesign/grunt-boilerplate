@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         htmlroot : '.'
       },
       files: {
-        './site-building/css/styles.clean.expanded.css' : ['./site-building/*.html']
+        './site-building/css/styles.clean.uncss.css' : ['./site-building/*.html']
       }
     }
   });
