@@ -17,6 +17,7 @@
     "grunt-contrib-htmlmin": "~0.3.0",
     "grunt-pleeease": "~1.2.0",
     "grunt-uncss": "~0.3.8",
-    "grunt-contrib-copy": "~0.7.0"
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-banner": "~0.2.3"
   }
 }
