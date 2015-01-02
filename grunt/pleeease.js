@@ -18,7 +18,7 @@ module.exports = function(grunt) {
          minifier: false
        },
        files: {
-         './site-building/css/styles.post.expanded.css' : './src/css/styles.css'
+         './src/site-building/css/styles.post.expanded.css' : './src/css/styles.css'
        }//Files
      },//Build With Styles for Site Building
      compressedStyles: {
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           minifier: true
         },
         files: {
-          './site-building/css/styles.post.min.css' : './site-building/css/styles.post.expanded.css'
+          './src/site-building/css/styles.post.min.css' : './src/site-building/css/styles.post.expanded.css'
         }//Files
       }//Compressed Styles for site distribution
    });

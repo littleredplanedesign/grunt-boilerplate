@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: './src/html',
+        cwd: './src/site-building/',
         src: '**/*.html',
         dest: './site-distribution'
       }]

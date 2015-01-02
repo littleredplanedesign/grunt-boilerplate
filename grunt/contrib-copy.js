@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       files: [
         {
           expand: true,
-          cwd: './site-building',
+          cwd: '.src/site-building',
           src: '**/*.css',
           dest: './site-distribution'
         }

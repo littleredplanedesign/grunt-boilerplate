@@ -9,7 +9,7 @@ module.exports = function(grunt){
     combine: {
       files: [{
         expand: true,
-        cwd: './site-building/',
+        cwd: './src/site-building/',
         flatten: true,
         src: '**/*.css',
         dest: './site-distribution/css/'
