@@ -1,16 +1,12 @@
 module.exports = function(grunt){
   grunt.config('shell', {
-    //These are for reference, for now.
-    setupStyleguide: {
+    newMarkupComponent: {
       command: [
-        'cd src',
-        'mkdir styleguide',
-        'cd styleguide',
-        'git clone git://github.com/kaleistyleguide/kaleistyleguide.git',
-        'grunt style-guide-server'
+        'cd src/test',
+        'cp SKELETON.html ./NEWHTML.html'
       ].join('&&')
     }
   });
   grunt.loadNpmTasks('grunt-shell');
-  grunt.registerTask('setupStyleguide', 'shell:setupStyleguide');
+  grunt.registerTask('new-test-html', 'shell:newMarkupComponent');
 }

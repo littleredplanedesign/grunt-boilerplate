@@ -6,3 +6,4 @@ scss-lint-report.xml
 .css
 src/styleguide/css
 src/styleguide/*.html
+reminders/*

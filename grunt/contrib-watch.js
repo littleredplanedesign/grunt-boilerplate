@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['./src/**/*.scss'],
-        tasks: ['compass:dev']
+        tasks: ['compass:dev', 'usebanner:annotateStandard']
       },//SASS
       html: {
         files: ['./src/**/*.html']
