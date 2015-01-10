@@ -1,4 +1,7 @@
-@import 'layout/manifest-grid';
+@import 'base/manifest-base';
+
+@import 'layout/manifest-layout';
+
 /*doc
 ---
 title: Buttons
@@ -75,7 +78,3 @@ body {
 	background: #ccc;
 	color: #333;
 }
-
-
-
-
