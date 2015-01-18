@@ -5,11 +5,14 @@
 @include generateExtraSmallColumns;
 
 .grid {
-	margin-bottom: 15px;
+	padding-left: $defaultHorizontalPadding;
+	padding-right: $defaultHorizontalPadding;
 }
 
 .row {
 	overflow: hidden;
+	margin-right: -$defaultGridOffset;
+	margin-left: -$defaultGridOffset;
 }
 
 .column {

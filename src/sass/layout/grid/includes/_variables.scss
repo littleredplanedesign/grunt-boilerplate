@@ -1,8 +1,9 @@
 //Grid Default Values
 
 $defaultTotalColumns: 12 !default;
-$defaultHorizontalPadding: 10px !default;
 $defaultVerticalPadding: 15px !default;
+$defaultHorizontalPadding: 10px !default;
+$defaultGridOffset: $defaultHorizontalPadding;
 
 //Breakpoint Values
 
