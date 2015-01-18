@@ -1,1 +1,15 @@
 //Grid Default Values
+
+$defaultTotalColumns: 12 !default;
+$defaultHorizontalPadding: 10px !default;
+$defaultVerticalPadding: 15px !default;
+
+//Breakpoint Values
+
+$tablets: 768px;
+$desktopSmall: 992px;
+$desktopLarge: 1200px;
+
+//Opt Out/In
+
+$xsColumnClasses: false;

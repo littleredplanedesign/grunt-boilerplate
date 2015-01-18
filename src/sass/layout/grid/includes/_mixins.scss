@@ -1,0 +1,50 @@
+@import 'layout/grid/includes/variables',
+				 'layout/grid/includes/functions';
+
+//Column Generation
+
+@mixin generateStandardColumns {
+	$i: 1;
+	@while $i <= $defaultTotalColumns {
+		.span-#{$i}{
+			width: percentage($i/$defaultTotalColumns);
+		}
+		$i: $i + 1;
+	}
+}
+
+@mixin generateExtraSmallColumns {
+	@if $xsColumnClasses == true {
+		$i: 1;
+		@while $i <= $defaultTotalColumns {
+			.xs-span-#{$i}{
+				width: percentage($i/$defaultTotalColumns);
+			}
+			$i: $i + 1;
+		}
+	}
+}
+//Media Queries Mixins
+
+@mixin tablet {
+	@media (min-width: #{$tablets}) {
+		/*768*/
+		@content;
+	}
+}
+
+@mixin desktopSmall {
+	@media (min-width: #{$desktopSmall}) {
+		/*992*/
+		@content;
+	}
+}
+
+@mixin desktopLarge {
+	@media (min-width: #{$desktopLarge}) {
+		/*1200*/
+		@content;
+	}
+}
+
+

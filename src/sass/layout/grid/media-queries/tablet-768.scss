@@ -1,0 +1,11 @@
+@import 'layout/grid/includes/variables',
+				 'layout/grid/includes/functions',
+				 'layout/grid/includes/mixins';
+
+@include tablet {
+	@include generateStandardColumns;
+	.column {
+		float: left;
+	}
+}
+

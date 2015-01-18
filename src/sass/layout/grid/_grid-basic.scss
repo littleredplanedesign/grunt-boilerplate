@@ -2,3 +2,17 @@
 				 'layout/grid/includes/functions',
 				 'layout/grid/includes/mixins';
 
+@include generateExtraSmallColumns;
+
+.grid {
+	margin-bottom: 15px;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.column {
+	background: #fff;
+	padding: $defaultVerticalPadding $defaultHorizontalPadding;
+}
