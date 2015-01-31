@@ -2,10 +2,10 @@
 				 'layout/grid/includes/functions',
 				 'layout/grid/includes/mixins';
 
-@include tablet {
-	@include generateStandardColumns;
-	.column {
-		float: left;
+@include desktopSmall {
+	@include generateDesktopSmallColumns;
+
+	body {
+		max-width: $desktopSmall;
 	}
 }
-

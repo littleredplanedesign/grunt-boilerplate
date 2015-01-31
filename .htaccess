@@ -1,0 +1,2 @@
+# Component type for box sizing polyfill.
+AddType text/x-component .htc

@@ -1,0 +1,6 @@
+@import 'base/box-sizing-polyfill-master/includes/mixins';
+*,
+*:before,
+*:after {
+	@include box-sizing-polyfill;
+}

@@ -2,17 +2,6 @@
 				 'layout/grid/includes/functions';
 
 //Column Generation
-
-@mixin generateStandardColumns {
-	$i: 1;
-	@while $i <= $defaultTotalColumns {
-		.span-#{$i}{
-			width: percentage($i/$defaultTotalColumns);
-		}
-		$i: $i + 1;
-	}
-}
-
 @mixin generateExtraSmallColumns {
 	@if $xsColumnClasses == true {
 		$i: 1;
@@ -24,6 +13,41 @@
 		}
 	}
 }
+
+@mixin generateTabletColumns {
+	@if $medColumnClasses == true {
+		$i: 1;
+		@while $i <= $defaultTotalColumns {
+			.tablet-span-#{$i}{
+				width: percentage($i/$defaultTotalColumns);
+			}
+			$i: $i + 1;
+		}
+	}
+}
+
+@mixin generateDesktopSmallColumns {
+	@if $desktopSmallColumns == true {
+		$i: 1;
+		@while $i <= $defaultTotalColumns {
+			.desktop-small-span-#{$i}{
+				width: percentage($i/$defaultTotalColumns);
+			}
+			$i: $i + 1;
+		}
+	}
+}
+
+@mixin generateStandardColumns {
+	$i: 1;
+	@while $i <= $defaultTotalColumns {
+		.span-#{$i}{
+			width: percentage($i/$defaultTotalColumns);
+		}
+		$i: $i + 1;
+	}
+}
+
 //Media Queries Mixins
 
 @mixin tablet {

@@ -1,0 +1,19 @@
+@import 'layout/grid/includes/variables',
+				 'layout/grid/includes/functions',
+				 'layout/grid/includes/mixins';
+
+@include tablet {
+	@include generateStandardColumns;
+	@include generateTabletColumns;
+	body {
+		margin: 0 auto;
+		max-width: $tablets;
+	}
+	.row {
+		overflow: hidden;
+	}
+	.column {
+		float: left;
+	}
+}
+
