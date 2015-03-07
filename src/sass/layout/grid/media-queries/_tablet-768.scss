@@ -5,8 +5,7 @@
 @include tablet {
 	@include generateStandardColumns;
 	@include generateTabletColumns;
-	body {
-		margin: 0 auto;
+	.grid {
 		max-width: $tablets;
 	}
 	.row {

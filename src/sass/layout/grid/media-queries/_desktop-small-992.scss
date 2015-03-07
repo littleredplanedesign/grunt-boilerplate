@@ -5,7 +5,7 @@
 @include desktopSmall {
 	@include generateDesktopSmallColumns;
 
-	body {
+	.grid {
 		max-width: $desktopSmall;
 	}
 }
