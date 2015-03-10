@@ -7,7 +7,8 @@
 .grid {
 	padding-left: $defaultHorizontalPadding;
 	padding-right: $defaultHorizontalPadding;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .row {
@@ -16,5 +17,6 @@
 }
 
 .column {
+	background: white;
 	padding: $defaultVerticalPadding $defaultHorizontalPadding;
 }

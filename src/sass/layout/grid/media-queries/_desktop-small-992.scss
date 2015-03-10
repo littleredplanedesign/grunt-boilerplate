@@ -6,6 +6,6 @@
 	@include generateDesktopSmallColumns;
 
 	.grid {
-		max-width: $desktopSmall;
+		width: $desktopSmall;
 	}
 }

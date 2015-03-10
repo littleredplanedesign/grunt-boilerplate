@@ -42,7 +42,7 @@
 	$i: 1;
 	@while $i <= $defaultTotalColumns {
 		.span-#{$i}{
-			width: percentage($i/$defaultTotalColumns);
+			width:percentage($i/$defaultTotalColumns);
 		}
 		$i: $i + 1;
 	}
@@ -51,21 +51,21 @@
 //Media Queries Mixins
 
 @mixin tablet {
-	@media (min-width: #{$tablets}) {
+	@media screen and (min-width: #{$tablets}) {
 		/*768*/
 		@content;
 	}
 }
 
 @mixin desktopSmall {
-	@media (min-width: #{$desktopSmall}) {
+	@media screen and (min-width: #{$desktopSmall}) {
 		/*992*/
 		@content;
 	}
 }
 
 @mixin desktopLarge {
-	@media (min-width: #{$desktopLarge}) {
+	@media screen and (min-width: #{$desktopLarge}) {
 		/*1200*/
 		@content;
 	}

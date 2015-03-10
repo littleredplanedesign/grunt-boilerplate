@@ -6,7 +6,7 @@
 	@include generateStandardColumns;
 	@include generateTabletColumns;
 	.grid {
-		max-width: $tablets;
+		width: $tablets;
 	}
 	.row {
 		overflow: hidden;
